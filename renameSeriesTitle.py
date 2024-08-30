@@ -46,6 +46,9 @@ for arg in sys.argv[1:]:
             del arg[1]
             del arg[0]
             arg.insert(0, "Station 19")
+        if arg[1] == 'Iii':
+            del arg[1]
+            arg.insert(1, "III")
         for idx, string in enumerate(arg):
             if (idx != 0) and ((len(string) <= 2) or (string in toLower)):
                 string = string.lower()
